@@ -10,10 +10,11 @@ ROS 2 description and simulation package for the **Kinova Gen3 Lite** manipulato
 **Note:** This package is a submodule of the [arms](https://github.com/MOBILAB-UDESC/arms.git) meta-package.
 
 ## ROS 2 info
+<p align="center">
 |Ubuntu|ROS 2 Distro|Gazebo Version|
 |:----:|:---------------:|:------------:|
 |[24.04](https://ubuntu.com/blog/tag/ubuntu-24-04-lts)|[Jazzy](https://docs.ros.org/en/jazzy/index.html)|[Harmonic](https://gazebosim.org/docs/harmonic/getstarted/)|
-
+</p>
 
 ## Cloning and building
 ``` cli
@@ -46,3 +47,5 @@ ros2 launch arms_bringup arm.launch.py use_sim_time:=true arm:=gen3_lite gripper
 ``` cli
 ros2 launch arms_bringup arm_moveit_launch.py use_sim_time:=true arm:=gen3_lite gripper:=kinova_2f_lite rviz:=true
 ```
+<img src="https://raw.githubusercontent.com/MOBILAB-UDESC/gen3_lite/main/doc/resources/gen3_lite_gz.png" alt="gen3_lite_gz" width="750"/>
+<img src="https://raw.githubusercontent.com/MOBILAB-UDESC/gen3_lite/main/doc/resources/gen3_lite_moveit.png" alt="gen3_lite_moveit" width="750"/>
