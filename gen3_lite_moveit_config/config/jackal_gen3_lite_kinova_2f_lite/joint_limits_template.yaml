@@ -1,8 +1,8 @@
 # This template defines velocity and acceleration limits for all robot joints.
 # Template variable <robot_prefix> is replaced at launch time.
 
-default_velocity_scaling_factor: 1.0
-default_acceleration_scaling_factor: 1.0
+default_velocity_scaling_factor: 0.60
+default_acceleration_scaling_factor: 0.60
 
 joint_limits:
   # ARM JOINTS
