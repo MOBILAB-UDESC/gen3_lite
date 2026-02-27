@@ -60,17 +60,5 @@
     <disable_collisions link1="<robot_prefix>forearm_link" link2="<robot_prefix>upper_wrist_link" reason="Never" />
     <disable_collisions link1="<robot_prefix>lower_wrist_link" link2="<robot_prefix>upper_wrist_link" reason="Adjacent" />
     <disable_collisions link1="<robot_prefix>lower_wrist_link" link2="<robot_prefix>camera_1_link" reason="Never" />
-    <disable_collisions link1="<robot_prefix>lower_wrist_link" link2="<robot_prefix>camera_support_inferior_link" reason="Never" />
-    <disable_collisions link1="<robot_prefix>lower_wrist_link" link2="<robot_prefix>camera_support_superior_link" reason="Never" />
-    <disable_collisions link1="<robot_prefix>lower_wrist_link" link2="<robot_prefix>camera_support_cylinder_link" reason="Never" />
     <disable_collisions link1="<robot_prefix>upper_wrist_link" link2="<robot_prefix>camera_1_link" reason="Adjacent" />
-    <disable_collisions link1="<robot_prefix>upper_wrist_link" link2="<robot_prefix>camera_support_inferior_link" reason="Adjacent" />
-    <disable_collisions link1="<robot_prefix>upper_wrist_link" link2="<robot_prefix>camera_support_superior_link" reason="Adjacent" />
-    <disable_collisions link1="<robot_prefix>upper_wrist_link" link2="<robot_prefix>camera_support_cylinder_link" reason="Never" />
-    <disable_collisions link1="<robot_prefix>camera_1_link" link2="<robot_prefix>camera_support_inferior_link" reason="Never" />
-    <disable_collisions link1="<robot_prefix>camera_1_link" link2="<robot_prefix>camera_support_superior_link" reason="Never" />
-    <disable_collisions link1="<robot_prefix>camera_1_link" link2="<robot_prefix>camera_support_cylinder_link" reason="Adjacent" />
-    <disable_collisions link1="<robot_prefix>camera_support_inferior_link" link2="<robot_prefix>camera_support_superior_link" reason="Adjacent" />
-    <disable_collisions link1="<robot_prefix>camera_support_inferior_link" link2="<robot_prefix>camera_support_cylinder_link" reason="Never" />
-    <disable_collisions link1="<robot_prefix>camera_support_superior_link" link2="<robot_prefix>camera_support_cylinder_link" reason="Adjacent" />
 </robot>
