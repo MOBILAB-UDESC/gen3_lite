@@ -198,4 +198,4 @@ gripper:
     - LazyPRMstarkConfigDefault
     - SPARSkConfigDefault
     - SPARStwokConfigDefault
-    - TrajOptDefault=
+    - TrajOptDefault
