@@ -227,9 +227,20 @@
 
         <!-- Optional components -->
         <xacro:if value="${use_camera}">
+            <xacro:include filename="$(find gen3_lite_description)/urdf/camera/support.urdf.xacro" />
+            <xacro:camera_inferior_support parent="dummy_link" prefix="${prefix}">
+                <origin rpy="0.0 0.0 ${M_PI/2}" xyz="0.0 0.0 0.018" />
+            </xacro:camera_inferior_support>
+            <xacro:camera_superior_support parent="dummy_link" prefix="${prefix}">
+                <origin rpy="0.0 0.0 -${M_PI/2}" xyz="0.0 0.0 0.018" />
+            </xacro:camera_superior_support>
+            <!-- <xacro:include filename="$(find gen3_lite_description)/urdf/camera/_d435.urdf.xacro" />
+            <xacro:sensor_d435 parent="dummy_link" prefix="${prefix}" name="camera_1" add_plug="false">
+                <origin rpy="${M_PI} -${M_PI/2} 0.0" xyz="0.045 0.0 0.018" />
+            </xacro:sensor_d435> -->
             <xacro:include filename="$(find gen3_lite_description)/urdf/camera/_d435.urdf.xacro" />
-            <xacro:sensor_d435 parent="dummy_link" prefix="${prefix}" name="camera_1">
-                <origin rpy="${M_PI} -${M_PI/2} 0.0" xyz="0.045 0.0 0.015" />
+            <xacro:sensor_d435 parent="camera_support_cylinder_link" prefix="${prefix}" name="camera_1" add_plug="false">
+                <origin rpy="0.0 -${M_PI/2} -${M_PI/2}" xyz="0.0 0.010 0.0" />
             </xacro:sensor_d435>
         </xacro:if>
 

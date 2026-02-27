@@ -1,9 +1,10 @@
 <?xml version="1.0"?>
 
-<robot name="gen3_lite" xmlns:xacro="http://ros.org/wiki/xacro">
+<robot name="$(arg name)" xmlns:xacro="http://ros.org/wiki/xacro">
 
     <!-- Arguments -->
-    <xacro:arg name="sim_gazebo" default="false" />
+    <xacro:arg name="name" default="gen3_lite"/>
+    <xacro:arg name="sim_gazebo" default="true" />
     <xacro:arg name="use_camera" default="false" />
     <xacro:arg name="prefix" default=""/>
     <xacro:arg name="gripper" default="" />

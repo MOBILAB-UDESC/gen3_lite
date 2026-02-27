@@ -10,6 +10,9 @@
     <material name="gen3_lite_white">
         <color rgba="0.803 0.824 0.820 1" />
     </material>
+    <material name="camera_support_dark_gray">
+        <color rgba="0.25 0.25 0.25 1"/>
+    </material>
 
     <xacro:property name="joint_limits_config" value="${xacro.load_yaml('$(arg joint_limits)')}" />
     <xacro:property name="initial_positions_config" value="${xacro.load_yaml('$(arg initial_position)')}" />
