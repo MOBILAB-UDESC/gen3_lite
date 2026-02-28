@@ -10,18 +10,16 @@ ROS 2 description and simulation package for the **Kinova Gen3 Lite** manipulato
 **Note:** This package is a submodule of the [arms](https://github.com/MOBILAB-UDESC/arms.git) meta-package.
 
 ## ROS 2 info
-<p align="center">
 |Ubuntu|ROS 2 Distro|Gazebo Version|
 |:----:|:---------------:|:------------:|
 |[24.04](https://ubuntu.com/blog/tag/ubuntu-24-04-lts)|[Jazzy](https://docs.ros.org/en/jazzy/index.html)|[Harmonic](https://gazebosim.org/docs/harmonic/getstarted/)|
-</p>
 
 ## Cloning and building
 ``` cli
 mkdir ~/arms_ws && cd ~/arms_ws
 git clone https://github.com/MOBILAB-UDESC/arms.git src
 cd src
-git submodule update --init gen3_lite kinova_2f_lite
+git submodule update --init gen3_lite grippers/kinova_2f_lite
 cd ..
 rosdep install --from-paths src --ignore-src -r -y
 colcon build
@@ -35,7 +33,7 @@ Compatible gripper:
 ## Simulation
 #### Launch gazebo world
 ``` cli
-ros2 launch arms_bringup arm_world_launch.py world_name:=playground
+ros2 launch arms_bringup arm_world.launch.py world_name:=playground
 ```
 
 #### Spawn the robot
@@ -45,7 +43,7 @@ ros2 launch arms_bringup arm.launch.py use_sim_time:=true arm:=gen3_lite gripper
 
 #### Launch moveit
 ``` cli
-ros2 launch arms_bringup arm_moveit_launch.py use_sim_time:=true arm:=gen3_lite gripper:=kinova_2f_lite rviz:=true
+ros2 launch arms_bringup arm_moveit.launch.py use_sim_time:=true arm:=gen3_lite gripper:=kinova_2f_lite rviz:=true octopmap:=true
 ```
 <img src="https://raw.githubusercontent.com/MOBILAB-UDESC/gen3_lite/main/doc/resources/gen3_lite_gz.png" alt="gen3_lite_gz" width="750"/>
 <img src="https://raw.githubusercontent.com/MOBILAB-UDESC/gen3_lite/main/doc/resources/gen3_lite_moveit.png" alt="gen3_lite_moveit" width="750"/>
