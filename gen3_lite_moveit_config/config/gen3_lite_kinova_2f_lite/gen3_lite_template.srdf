@@ -68,7 +68,7 @@
         <joint name="<robot_prefix>right_finger_bottom_joint" value="0.01" />
     </group_state>
     <group_state name="half-close" group="gripper">
-        <joint name="<robot_prefix>right_finger_bottom_joint" value="0.5" />
+        <joint name="<robot_prefix>right_finger_bottom_joint" value="0.65" />
     </group_state>
     <group_state name="close" group="gripper">
         <joint name="<robot_prefix>right_finger_bottom_joint" value="0.845" />
