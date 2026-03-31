@@ -32,7 +32,7 @@ aluminum peripherial evaluation case.
       parent
       prefix
       use_mesh:=true
-      use_nominal_extrinsics:=false">
+      use_nominal_extrinsics:=true">
 
     <!-- The following values are approximate, and the camera node
      publishing TF values with actual calibrated camera extrinsic values -->

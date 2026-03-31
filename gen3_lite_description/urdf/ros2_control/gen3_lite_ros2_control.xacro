@@ -97,9 +97,7 @@
             <xacro:if value="${gripper == 'kinova_2f_lite' and not sim_gazebo}">
                 <joint name="${prefix}right_finger_bottom_joint">
                     <command_interface name="position" />
-                    <state_interface name="position">
-                        <param name="initial_value">${right_finger_bottom_joint_initial}</param>
-                    </state_interface>
+                    <state_interface name="position" />
                     <state_interface name="velocity" />
                 </joint>
             </xacro:if>

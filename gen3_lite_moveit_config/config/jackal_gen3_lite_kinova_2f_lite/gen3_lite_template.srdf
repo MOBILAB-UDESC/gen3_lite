@@ -46,11 +46,11 @@
     </group_state>
     <group_state name="home" group="arm">
         <joint name="<robot_prefix>joint_1" value="0.0" />
-        <joint name="<robot_prefix>joint_2" value="0.9661" />
-        <joint name="<robot_prefix>joint_3" value="2.2351" />
-        <joint name="<robot_prefix>joint_4" value="0.0" />
+        <joint name="<robot_prefix>joint_2" value="0.979" />
+        <joint name="<robot_prefix>joint_3" value="2.212" />
+        <joint name="<robot_prefix>joint_4" value="1.57" />
         <joint name="<robot_prefix>joint_5" value="0.0" />
-        <joint name="<robot_prefix>joint_6" value="-0.1" />
+        <joint name="<robot_prefix>joint_6" value="1.57" />
     </group_state>
     <!-- Used in pick and place -->
     <group_state name="place" group="arm">

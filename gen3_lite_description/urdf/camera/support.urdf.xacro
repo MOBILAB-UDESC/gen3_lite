@@ -55,7 +55,7 @@
     </link>
 
     <joint name="${prefix}camera_support_cylinder_joint" type="fixed">
-      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0575 0.0" />
+      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0625 0.0" />
       <parent link="${prefix}camera_support_superior_link" />
       <child link="${prefix}camera_support_cylinder_link" />
     </joint>
@@ -64,14 +64,14 @@
       <visual>
         <origin xyz="0.0 0 0.0" rpy="-${M_PI/2} 0 0" />
         <geometry>
-          <cylinder radius="0.009" length="0.02" />
+          <cylinder radius="0.01156" length="0.0398" />
         </geometry>
         <material name="camera_support_dark_gray" />
       </visual>
       <collision>
         <origin xyz="0.0 0 0.0" rpy="-${M_PI/2} 0 0" />
         <geometry>
-          <cylinder radius="0.009" length="0.02" />
+          <cylinder radius="0.01156" length="0.0398" />
         </geometry>
       </collision>
     </link>
