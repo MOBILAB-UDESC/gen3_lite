@@ -239,8 +239,8 @@
                 <origin rpy="${M_PI} -${M_PI/2} 0.0" xyz="0.045 0.0 0.018" />
             </xacro:sensor_d435> -->
             <xacro:include filename="$(find gen3_lite_description)/urdf/camera/_d435.urdf.xacro" />
-            <xacro:sensor_d435 parent="camera_support_cylinder_link" prefix="${prefix}" name="camera_1" add_plug="false">
-                <origin rpy="0.0 -${M_PI/2} -${M_PI/2}" xyz="0.0 0.0190 0.0" />
+            <xacro:sensor_d435 parent="camera_support_superior_link" prefix="${prefix}" name="camera_1">
+                <origin rpy="0.0 -${M_PI/2} -${M_PI/2}" xyz="0.0 0.0815 0.0051" />
             </xacro:sensor_d435>
         </xacro:if>
 

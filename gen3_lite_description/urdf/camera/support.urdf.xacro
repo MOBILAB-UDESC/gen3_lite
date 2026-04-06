@@ -42,19 +42,19 @@
       <visual>
         <origin xyz="-0.064 0 -0.0125" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://gen3_lite_description/meshes/d435/anel_jackal_superior.STL" scale="0.001 0.001 0.001" />
+          <mesh filename="package://gen3_lite_description/meshes/d435/anel_jackal_superior_2.STL" scale="0.001 0.001 0.001" />
         </geometry>
         <material name="camera_support_dark_gray" />
       </visual>
       <collision>
         <origin xyz="-0.064 0 -0.0125" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://gen3_lite_description/meshes/d435/anel_jackal_superior.STL" scale="0.001 0.001 0.001" />
+          <mesh filename="package://gen3_lite_description/meshes/d435/anel_jackal_superior_2.STL" scale="0.001 0.001 0.001" />
         </geometry>
       </collision>
     </link>
 
-    <joint name="${prefix}camera_support_cylinder_joint" type="fixed">
+    <!-- <joint name="${prefix}camera_support_cylinder_joint" type="fixed">
       <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0625 0.0" />
       <parent link="${prefix}camera_support_superior_link" />
       <child link="${prefix}camera_support_cylinder_link" />
@@ -74,6 +74,6 @@
           <cylinder radius="0.01156" length="0.0398" />
         </geometry>
       </collision>
-    </link>
+    </link> -->
   </xacro:macro>
 </robot>
